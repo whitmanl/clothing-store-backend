@@ -2,6 +2,7 @@ import {
   ConflictException,
   Injectable,
   NotFoundException,
+  UnauthorizedException,
 } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
@@ -26,13 +27,13 @@ export class UsersService {
 
     body.password = await bcrypt.hash(body.password, 10);
     const user = new this.userModel(body);
-    return user.save();
+    return (await user.save()).toJSON();
   }
 
   async getUserById(id: string): Promise<User> {
     const user = await this.userModel.findById(id).select('-password');
     if (!user) throw new NotFoundException('User not found');
-    return user;
+    return user.toJSON();
   }
 
   async updateUser(id: string, body: UpdateUserDto): Promise<User> {
@@ -59,6 +60,6 @@ export class UsersService {
     if (user && (await bcrypt.compare(password, user.password))) {
       return this.getUserById(user.id);
     }
-    throw new NotFoundException('Username or password incorrect');
+    throw new UnauthorizedException('Username or password incorrect');
   }
 }
