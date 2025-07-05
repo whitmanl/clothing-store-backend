@@ -15,4 +15,6 @@ $ yarn run start:dev
 
 The Git commit history reflects the steps I worked and the time taken to complete the project.
 
+Also, A Postman collection (postman.json) is included for your convenience, feel free to use it to test the API.
+
 I am looking forward to your comments and feedback!
