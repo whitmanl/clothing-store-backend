@@ -10,14 +10,11 @@ import * as _ from 'lodash';
 export class SalesService {
   constructor(@InjectModel(Sale.name) private saleModel: Model<SaleDocument>) {}
 
-  async createSale(userId: string, body: SaleDto): Promise<Sale> {
-    const { products } = body;
+  async createSale(body: SaleDto): Promise<Sale> {
+    const { userId, products, totalPrice } = body;
     if (products.length <= 0) {
       throw new BadRequestException('Your cart is empty!');
     }
-    const totalPrice = _.sumBy(products, (v) => {
-      return v.price * v.quantity;
-    });
 
     const sale = new this.saleModel({
       userId: new Types.ObjectId(userId),

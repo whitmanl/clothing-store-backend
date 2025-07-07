@@ -19,7 +19,10 @@ export class SalesController {
   @UseGuards(JwtAuthGuard)
   @Post()
   async createSale(@Body() body: SaleDto, @Request() req) {
-    return this.salesService.createSale(req.user.userId, body);
+    if (req.user.userId !== body.userId) {
+      throw new ForbiddenException('Access denied');
+    }
+    return this.salesService.createSale(body);
   }
 
   @UseGuards(JwtAuthGuard)

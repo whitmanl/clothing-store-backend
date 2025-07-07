@@ -15,6 +15,12 @@ class ProductDto {
 }
 
 export class SaleDto {
+  @IsString()
+  userId: string;
+
   @IsArray()
   products: ProductDto[];
+
+  @IsNumber()
+  totalPrice: number;
 }

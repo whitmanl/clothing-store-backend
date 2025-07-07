@@ -63,6 +63,7 @@ export class UsersController {
   @Post('login')
   async login(@Body() body: LoginDto) {
     const user = await this.usersService.login(body);
-    return this.authService.getJwt(user);
+    const token = await this.authService.getJwt(user);
+    return { user, ...token };
   }
 }
