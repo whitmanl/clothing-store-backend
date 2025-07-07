@@ -19,6 +19,7 @@ The Git commit history reflects the steps I worked and the time taken to complet
 - Used MVC and DTO to structure the backend
 - JWT authentication with @nestjs/passport
 - toJSON() to custom and avoid not necessary field from mongo
+- Better to have refresh token logic
 
 Also, A Postman collection (postman.json) is included for your convenience, feel free to use it to test the API.
 
