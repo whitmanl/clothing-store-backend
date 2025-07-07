@@ -20,12 +20,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/api/users/signup",
+					"raw": "http://localhost:3001/api/users/signup",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "3001",
 					"path": [
 						"api",
 						"users",
@@ -62,12 +62,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/api/users/login",
+					"raw": "http://localhost:3001/api/users/login",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "3001",
 					"path": [
 						"api",
 						"users",
@@ -93,12 +93,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/api/users/6869973484413a6cae9f6ef3",
+					"raw": "http://localhost:3001/api/users/6869973484413a6cae9f6ef3",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "3001",
 					"path": [
 						"api",
 						"users",
@@ -125,7 +125,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"username\": \"Whitman\",\n  \"password\": \"Password123\",\n  \"email\": \"luiwhitman@gmail.com\",\n  \"firstName\": \"Whitman\",\n  \"lastName\": \"Lui\",\n  \"address\": \"Address\",\n  \"phoneNumber\": \"4377884079\"\n}",
+					"raw": "{\n  \"username\": \"Whitman\",\n  \"email\": \"luiwhitman@gmail.com\",\n  \"firstName\": \"Whitman\",\n  \"lastName\": \"Lui\",\n  \"address\": \"Address\",\n  \"phoneNumber\": \"4377884079\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -133,16 +133,16 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/api/users/68698d4c0f95fd5757066753",
+					"raw": "http://localhost:3001/api/users/6869973484413a6cae9f6ef3",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "3001",
 					"path": [
 						"api",
 						"users",
-						"68698d4c0f95fd5757066753"
+						"6869973484413a6cae9f6ef3"
 					]
 				}
 			},
@@ -164,12 +164,12 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/api/users/68698d4c0f95fd5757066753",
+					"raw": "http://localhost:3001/api/users/68698d4c0f95fd5757066753",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "3001",
 					"path": [
 						"api",
 						"users",
@@ -196,7 +196,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"products\": [\n        {\n            \"productId\": \"60d0fe4f7d6a4a0004c6a6f1\",\n            \"name\": \"Classic White T-Shirt\",\n            \"price\": 25.99,\n            \"quantity\": 1\n        },\n        {\n            \"productId\": \"60d0fe4f7d6a4a0004c6a6f2\",\n            \"name\": \"Slim Fit Jeans (Blue)\",\n            \"price\": 59.99,\n            \"quantity\": 1\n        }\n    ]\n}",
+					"raw": "{\n    \"userId\": \"6869973484413a6cae9f6ef3\",\n    \"products\": [\n        {\n            \"productId\": \"60d0fe4f7d6a4a0004c6a6f1\",\n            \"name\": \"Classic White T-Shirt\",\n            \"price\": 25.99,\n            \"quantity\": 1\n        },\n        {\n            \"productId\": \"60d0fe4f7d6a4a0004c6a6f2\",\n            \"name\": \"Slim Fit Jeans (Blue)\",\n            \"price\": 59.99,\n            \"quantity\": 1\n        }\n    ],\n    \"totalPrice\": \"25.99\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -204,12 +204,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/api/sales",
+					"raw": "http://localhost:3001/api/sales",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "3001",
 					"path": [
 						"api",
 						"sales"
@@ -234,12 +234,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/api/sales/6869973484413a6cae9f6ef3",
+					"raw": "http://localhost:3001/api/sales/6869973484413a6cae9f6ef3",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "3001",
 					"path": [
 						"api",
 						"sales",
